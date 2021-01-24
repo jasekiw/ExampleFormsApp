@@ -21,15 +21,15 @@ namespace ExampleFormsApp
             InitializeComponent();
         }
 
-        private void btnGetStudents_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine(string.Join(",", _context.Students.Select(s => s.Name).ToList().ToArray()));
-        }
-
-        private void btnAddStudent_Click(object sender, EventArgs e)
+        private void AddStudentButton_Click(object sender, EventArgs e)
         {
             _context.Students.Add(new Student { Name = "Test_" + Guid.NewGuid().ToString() });
             _context.SaveChanges();
+        }
+
+        private void GetStudentsButton_Click(object sender, EventArgs e)
+        {
+            ResultsLabel.Text = string.Join(",", _context.Students.Select(s => s.Name).ToList().ToArray());      
         }
     }
 }

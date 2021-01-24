@@ -29,37 +29,47 @@ namespace ExampleFormsApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGetStudents = new System.Windows.Forms.Button();
-            this.btnAddStudent = new System.Windows.Forms.Button();
+            this.GetStudentsButton = new System.Windows.Forms.Button();
+            this.AddStudentButton = new System.Windows.Forms.Button();
+            this.ResultsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnGetStudents
+            // GetStudentsButton
             // 
-            this.btnGetStudents.Location = new System.Drawing.Point(33, 28);
-            this.btnGetStudents.Name = "btnGetStudents";
-            this.btnGetStudents.Size = new System.Drawing.Size(117, 23);
-            this.btnGetStudents.TabIndex = 0;
-            this.btnGetStudents.Text = "Get Students";
-            this.btnGetStudents.UseVisualStyleBackColor = true;
-            this.btnGetStudents.Click += new System.EventHandler(this.btnGetStudents_Click);
+            this.GetStudentsButton.Location = new System.Drawing.Point(33, 28);
+            this.GetStudentsButton.Name = "GetStudentsButton";
+            this.GetStudentsButton.Size = new System.Drawing.Size(117, 23);
+            this.GetStudentsButton.TabIndex = 0;
+            this.GetStudentsButton.Text = "Get Students";
+            this.GetStudentsButton.UseVisualStyleBackColor = true;
+            this.GetStudentsButton.Click += new System.EventHandler(this.GetStudentsButton_Click);
             // 
-            // btnAddStudent
+            // AddStudentButton
             // 
-            this.btnAddStudent.Location = new System.Drawing.Point(178, 28);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(117, 23);
-            this.btnAddStudent.TabIndex = 1;
-            this.btnAddStudent.Text = "Add Student";
-            this.btnAddStudent.UseVisualStyleBackColor = true;
-            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
+            this.AddStudentButton.Location = new System.Drawing.Point(178, 28);
+            this.AddStudentButton.Name = "AddStudentButton";
+            this.AddStudentButton.Size = new System.Drawing.Size(117, 23);
+            this.AddStudentButton.TabIndex = 1;
+            this.AddStudentButton.Text = "Add Student";
+            this.AddStudentButton.UseVisualStyleBackColor = true;
+            this.AddStudentButton.Click += new System.EventHandler(this.AddStudentButton_Click);
+            // 
+            // ResultsLabel
+            // 
+            this.ResultsLabel.Location = new System.Drawing.Point(33, 81);
+            this.ResultsLabel.Name = "ResultsLabel";
+            this.ResultsLabel.Size = new System.Drawing.Size(577, 52);
+            this.ResultsLabel.TabIndex = 2;
+            this.ResultsLabel.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAddStudent);
-            this.Controls.Add(this.btnGetStudents);
+            this.ClientSize = new System.Drawing.Size(815, 446);
+            this.Controls.Add(this.ResultsLabel);
+            this.Controls.Add(this.AddStudentButton);
+            this.Controls.Add(this.GetStudentsButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -68,8 +78,9 @@ namespace ExampleFormsApp
 
         #endregion
 
-        private System.Windows.Forms.Button btnGetStudents;
-        private System.Windows.Forms.Button btnAddStudent;
+        private System.Windows.Forms.Button GetStudentsButton;
+        private System.Windows.Forms.Button AddStudentButton;
+        private System.Windows.Forms.Label ResultsLabel;
     }
 }
 
